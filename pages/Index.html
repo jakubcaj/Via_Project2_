@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/BaseStyle.css" rel="stylesheet">
+    <script src="scripts/App.js"></script>
+</head>
+<body>
+
+<div class="row ">
+    <div class="col-md-5 col-md-offset-6">
+        <div class="col-md-2 nav-menu" style="width: 12%">
+            <a class="nav-link nav-menu_item" href="#">Home</a>
+        </div>
+        <div class="col-md-2 nav-menu" style="min-width: 18%">
+            <div class="dropdown">
+                <a class="dropdown-toggle menuDropdown nav-menu_item" style="color: #333;" type="button"
+                   id="dropdownMenu1" data-toggle="dropdown">
+                    Products
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Product 1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Product 2</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Product 3</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Product 4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 nav-menu nav-menu_item" style="width: 12%">About</div>
+        <div class="col-md-2 nav-menu nav-menu_item" style="width: 14%;">Contact</div>
+        <div class="col-md-2 nav-menu" style="min-width: 20%">
+            <a class="nav-menu_item" href="#">
+                <span class="glyphicon glyphicon-user"></span>Client Area
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row news-carousel">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="owl-carousel">
+            <div class="item" align="center">
+                <h1> The raw power of dedicated server</h1>
+                <p>Get the compute and I/O power of single-tenant dedicated servers.</p>
+                <div style="width: 613px">
+                    <img height="189" src="img/server.png">
+                </div>
+                <div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>4 x 3.3 GHz CPU</span>
+                    </div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>1TB (Mirrored) Storage</span>
+                    </div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>16GB Available RAM</span>
+                    </div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>15TB Bandwidth</span>
+                    </div>
+                </div>
+                <button type="button" class="carousel_button price_button btn btn-default disabled">60.95 $</button>
+                <button type="button" class="carousel_button order_button btn btn-default">Order</button>
+            </div>
+            <div class="item" align="center">
+                <h1> The raw power of dedicated server</h1>
+                <p>Get the compute and I/O power of single-tenant dedicated servers.</p>
+                <div style="width: 613px">
+                    <img height="189" src="img/server.png">
+                </div>
+                <div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>4 x 3.3 GHz CPU</span>
+                    </div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>1TB (Mirrored) Storage</span>
+                    </div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>16GB Available RAM</span>
+                    </div>
+                    <div class="trait">
+                        <span class="glyphicon glyphicon-ok-sign"></span>
+                        <span>15TB Bandwidth</span>
+                    </div>
+                </div>
+                <button type="button" class="carousel_button price_button btn btn-default disabled">60.95 $</button>
+                <button type="button" class="carousel_button order_button btn btn-default">Order</button>
+            </div>
+        </div>
+        <div id="customNav" align="center" class="owl-nav">
+        </div>
+    </div>
+</div>
+<div class="plans">
+    <div class="row">
+        <div class="legend-title">
+            <h2>Our plans you can buy</h2>
+            <p>Each plan comes with a <b>risk free 7 days trial</b>. Choose your below</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12 legend">
+                    <div class="wrap">
+                        <div class="row">
+                            <span class="glyphicon glyphicon-piggy-bank glyph-grey"></span>
+                        </div>
+                        <div class="row legend-sub-title">
+                            <h3>Shared Hosting</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 legend-price">
+                                <span>$3.95*</span>
+                            </div>
+                            <div class="col-md-6 col-xs-6 legend-price-title">
+                                <div class="row">
+                                    <p>Per</p>
+                                </div>
+                                <div class="row">
+                                    <p>Month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>100 GB storage</p>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>500 GB bandwidth</p>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>Free domain name</p>
+                        </div>
+                        <div class="row legend-button-wrap" align="center">
+                            <button type="button" class="carousel_button order_button btn btn-default legend-button">
+                                Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12 legend">
+                    <div class="wrap">
+                        <div class="row">
+                            <span class="glyphicon glyphicon-sunglasses glyph-grey"></span>
+                        </div>
+                        <div class="row legend-sub-title">
+                            <h3>VPS Hosting</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 legend-price">
+                                <span>$9.95*</span>
+                            </div>
+                            <div class="col-md-6 col-xs-6 legend-price-title">
+                                <div class="row">
+                                    <p>Per</p>
+                                </div>
+                                <div class="row">
+                                    <p>Month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>300 GB storage</p>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>800 GB bandwidth</p>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>Free domain name</p>
+                        </div>
+                        <div class="row legend-button-wrap" align="center">
+                            <button type="button" class="carousel_button order_button btn btn-default legend-button">
+                                Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12 legend">
+                    <div class="wrap">
+                        <div class="row">
+                            <span class="glyphicon glyphicon-cloud-download glyph-grey"></span>
+                        </div>
+                        <div class="row legend-sub-title">
+                            <h3>Dedicated Hosting</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 legend-price">
+                                <span>$19.95*</span>
+                            </div>
+                            <div class="col-md-6 col-xs-6 legend-price-title">
+                                <div class="row">
+                                    <p>Per</p>
+                                </div>
+                                <div class="row">
+                                    <p>Month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>1000 GB storage</p>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>5000 GB bandwidth</p>
+                        </div>
+                        <div class="row legend-trait">
+                            <p>Free domain name</p>
+                        </div>
+                        <div class="row legend-button-wrap" align="center">
+                            <button type="button" class="carousel_button order_button btn btn-default legend-button">
+                                Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="features">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+            <div class="legend-title">
+                <h2>Features</h2>
+                <p>Each plan comes with a <b>risk free 7 days trial</b>. Choose your below</p>
+            </div>
+            <div class="row">
+                <div class=" col-xs-6 col-md-3 col-lg-3 feature-column">
+                    <div class="row feature-glyph">
+                        <i class="fa fa-life-ring"></i>
+                    </div>
+                    <div class="row feature-block">
+                        <div class="row feature-title">
+                            <h3>24/7 Support</h3>
+                        </div>
+                        <div class="row feature-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id dolor ac magna
+                                lobortis bibendum ac ac quam. Ut ut mauris et eros consectetur vulputate ac et tortor.
+                                Pellentesque tincidunt purus in consequat lacinia. Aenean non odio lectus. Curabitur
+                                euismod nisl tellus, id volutpat mauris ultrices et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 feature-column">
+                    <div class="row feature-glyph">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <div class="row feature-block">
+                        <div class="row feature-title">
+                            <h3>Money Back</h3>
+                        </div>
+                        <div class="row feature-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id dolor ac magna
+                                lobortis bibendum ac ac quam. Ut ut mauris et eros consectetur vulputate ac et tortor.
+                                Pellentesque tincidunt purus in consequat lacinia. Aenean non odio lectus. Curabitur
+                                euismod nisl tellus, id volutpat mauris ultrices et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 feature-column">
+                    <div class="row feature-glyph">
+                        <i class="fa fa-gift"></i>
+                    </div>
+                    <div class="row feature-block">
+                        <div class="row feature-title">
+                            <h3>Over $150 in Offers</h3>
+                        </div>
+                        <div class="row feature-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id dolor ac magna
+                                lobortis bibendum ac ac quam. Ut ut mauris et eros consectetur vulputate ac et tortor.
+                                Pellentesque tincidunt purus in consequat lacinia. Aenean non odio lectus. Curabitur
+                                euismod nisl tellus, id volutpat mauris ultrices et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 feature-column">
+                    <div class="row feature-glyph">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <div class="row feature-block">
+                        <div class="row feature-title">
+                            <h3>Mobile friendly</h3>
+                        </div>
+                        <div class="row feature-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id dolor ac magna
+                                lobortis bibendum ac ac quam. Ut ut mauris et eros consectetur vulputate ac et tortor.
+                                Pellentesque tincidunt purus in consequat lacinia. Aenean non odio lectus. Curabitur
+                                euismod nisl tellus, id volutpat mauris ultrices et.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row legend-title">
+                <h2>Portfolio</h2>
+                <p>Images from our satisfied clients</p>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="row porfolio-item">
+                        <span>Recent</span>
+                    </div>
+                    <div class="row porfolio-item">
+                        <span>Blog</span>
+                    </div>
+                    <div class="row porfolio-item">
+                        <span>Brands</span>
+                    </div>
+                    <div class="row porfolio-item">
+                        <span>App</span>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-4 portfolio-wrap">
+                            <img class="portfolio-img"
+                                 src="https://www.bigstockphoto.com/images/homepage/2016_bigstock_picks.jpg">
+                        </div>
+                        <div class="col-md-4 portfolio-wrap">
+                            <img class="portfolio-img"
+                                 src="https://www.bigstockphoto.com/images/homepage/2016_bigstock_picks.jpg">
+                        </div>
+                        <div class="col-md-4 portfolio-wrap">
+                            <img class="portfolio-img"
+                                 src="https://www.bigstockphoto.com/images/homepage/2016_bigstock_picks.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio-footer">
+                <span class="portfolio-button">Go To Portfolio</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row footer">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row footer-title">
+                    <h4>Get In Touch :)</h4>
+                </div>
+                <div class="row footer-item">
+                    <p><span class="glyphicon glyphicon-home"></span> Panelová 980, Ostrava-Puruba, Czechia</p>
+                </div>
+                <div class="row footer-item">
+                    <p><span class="glyphicon glyphicon-earphone"></span> +420123456789</p>
+                </div>
+                <div class="row footer-item">
+                    <p><span class="glyphicon glyphicon-envelope"></span> cajka@vsb.cz</p>
+                </div>
+                <div class="row footer-item">
+                    <p><span class="glyphicon glyphicon-calendar"></span> Monday - Saturday: 8:00 Am - 18 Pm, Friday:
+                        closed</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-6">
+                    <div class="row footer-title">
+                        <h4>Products</h4>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Shared Hosting</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Cloud Hosting</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Dedicated Hosting</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Domains</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Support</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Seo</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Webdesign</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row footer-title">
+                        <h4>Company</h4>
+                    </div>
+                    <div class="row footer-item">
+                        <p>About us</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Client Area</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Careers</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Knowledge Base</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Blog</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Portfolio</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Login</p>
+                    </div>
+                    <div class="row footer-item">
+                        <p>Register</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row footer-title">
+                    <h4>Follow Us</h4>
+                </div>
+                <div class="row footer-item">
+                    <span><i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i
+                            class="fa fa-instagram"></i> <i class="fa fa-linkedin-square"></i> <i
+                            class="fa fa-google-plus"></i> <i class="fa fa-pinterest"></i> </span>
+                </div>
+                <div class="row footer-title footer-paynment">
+                    <h4>Payment</h4>
+                </div>
+                <div class="row footer-item">
+                    <span><i class="fa fa-cc-visa"></i> <i class="fa fa-cc-mastercard"></i> <i
+                            class="fa fa-cc-paypal"></i> </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col-md-6 footer-bye-left">
+                <p><span class="glyphicon glyphicon-copyright-mark"></span> Via project2, all rights reserved</p>
+            </div>
+            <div class=" col-md-6 footer-bye-right">
+                <span class="footer-bye-item">Terms of Service</span>
+                <span class="footer-bye-item">Privacy Policy</span>
+                <span class="footer-bye-item">Contact</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
