@@ -1,16 +1,4 @@
 $( document ).ready(function() {
-    // $(function() {
-    //     // this will get the full URL at the address bar
-    //     var url = window.location.href;
-    //
-    //     // passes on every "a" tag
-    //     $("#navigation a").each(function() {
-    //         // checks if its the same on the address bar
-    //         if (url.indexOf(this.href) != -1) {
-    //             $(this).closest("li").addClass("current");
-    //         }
-    //     });
-    // });
 
     $(".owl-carousel").owlCarousel({
         items:1,
@@ -24,4 +12,26 @@ $( document ).ready(function() {
         dragEndSpeed: 1200,
         navContainer: '#customNav'
     });
+
+    var countDownDate = new Date("Jan 1, 2018 10:00:00").getTime();
+
+    var x = setInterval(function() {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 });
